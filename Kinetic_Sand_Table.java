@@ -100,8 +100,6 @@ public class Kinetic_Sand_Table
 	}
 
 
-
-
 	public static void main(String[] args)
 	{
 		long sleepDelay = 3000;
@@ -121,8 +119,6 @@ public class Kinetic_Sand_Table
 		*/
 		Kinetic_Sand_Table.alchemist();
 	}
-
-
 
 
 	public static void firstReset()
@@ -700,6 +696,18 @@ public class Kinetic_Sand_Table
 		cartesian[0] = r*Math.cos(Math.toRadians(pheta));
 		cartesian[1] = r*Math.sin(Math.toRadians(pheta));
 		return cartesian;
+	}
+	
+	public static void sleep(int waitTime)
+	{
+		try
+		{
+			Thread.sleep(waitTime);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
 	}
 
 }
